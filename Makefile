@@ -22,5 +22,5 @@ build: test
 	$(call with-context,poetry build)
 
 .PHONY: shell
-shell:
+shell: install
 	$(call with-context,poetry shell)
