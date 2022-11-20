@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "git-mesh"
+version = "0.1.0"
+description = ""
+authors = ["sspillane <sspillane@maystreet.com>"]
+readme = "README.md"
+packages = [{include = "git_mesh", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
