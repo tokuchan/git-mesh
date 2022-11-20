@@ -10,7 +10,7 @@ $(call with-context,poetry run $(1))
 endef
 
 .PHONY: install
-install:
+install: test
 	$(call with-context,poetry install)
 
 .PHONY: test
@@ -18,7 +18,7 @@ test:
 	$(call poetry-run,pytest)
 
 .PHONY: build
-build:
+build: test
 	$(call poetry-run,build)
 
 .PHONY: shell
