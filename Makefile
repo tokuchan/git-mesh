@@ -19,7 +19,7 @@ test:
 
 .PHONY: build
 build: test
-	$(call poetry-run,build)
+	$(call with-context,poetry build)
 
 .PHONY: shell
 shell:
