@@ -22,4 +22,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-addopts= "--doctest-modules"
+addopts= "--doctest-modules -ra -q"
